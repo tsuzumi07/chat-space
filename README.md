@@ -41,8 +41,8 @@ has_many :groups through,group_users
 |------|----|-------|
 |body|text|
 |image|string|
-|group-id|integer|null:false, foreign_key:true
-|user-id|integer|null:false,foreign_key:true
+|group|reference|null:false, foreign_key:true
+|user|reference|null:false,foreign_key:true
 
 #Association
 belongs_to :group
