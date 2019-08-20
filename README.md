@@ -27,13 +27,13 @@ Things you may want to cover:
 ##usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null:false, add_index: true
+|user|string|null:false, index: true
 |email|string|null:false, unique:true
 
 #Association
-has_many massages
-has_many group_users
-has_many groups through: :group_users
+has_many :massages
+has_many :group_users
+has_many :groups through,group_users
 
 
 ##massageテーブル
