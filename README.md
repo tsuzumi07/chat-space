@@ -52,7 +52,7 @@ belongs_to :user
 ##groupsテーブル
 |column|type|options|
 |------|----|-------|
-|group_name|string|null:false,unique:true|
+|name|string|null:false,unique:true|
 
 #Association
 has_many :group_name
