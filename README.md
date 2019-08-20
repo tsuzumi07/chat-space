@@ -27,7 +27,7 @@ Things you may want to cover:
 ##usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|reference|null:false, index: true
+|name|string|null:false, index: true
 |email|reference|null:false, unique:true
 
 #Association
