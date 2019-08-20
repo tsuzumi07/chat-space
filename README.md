@@ -47,6 +47,7 @@ has_many :groups through,group_users
 #Association
 belongs_to :group
 belongs_to :user
+has_many :groups_users
 
 
 
@@ -59,6 +60,7 @@ belongs_to :user
 #Association
 has_many :users,through: groups_users
 has_many :massages
+has_many :groups_users
 
 ##groups_usersテーブル
 |column|type|options|
