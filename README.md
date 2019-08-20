@@ -49,10 +49,12 @@ belongs_to :group
 belongs_to :user
 
 
+
 ##groupsテーブル
 |column|type|options|
 |------|----|-------|
 |name|string|null:false,unique:true|
+
 
 #Association
 has_many :users,through: groups_users
